@@ -1,0 +1,31 @@
+-require "uri"
+- i = 0
+
+-provide(:title, "Images")
+
+= form_for @image, method: :post, :html => { :multipart => true }  do |f| 
+  = f.file_field :picture, class: "button file_field",:onchange =>"validateFiles(this);document.getElementById('upload-preview').style.display='inline'",:data => {:max_file_size => 5.megabytes}
+  
+  .div
+    = f.submit nil, :class => 'button radius success'
+  .upload-preview#upload-preview{style:"display:none"}
+    %img{style: "max-width: 500px; height: 300px;"}/
+    %p 
+      %a.button.alert.invisible#remove_button{ onclick: "document.getElementById('upload-preview').style.display='none'"} Удалить
+%p
+
+
+
+- if !@images.empty?
+  - @images.each do |image|
+    - i+=1
+    - image_path_original = URI.encode(image.picture.url(:original))
+    - image_path_medium = URI.encode(image.picture.url(:medium))
+    - image_path_thumb = URI.encode(image.picture.url(:thumb))
+    - image_path_small = URI.encode(image.picture.url(:small))
+    %a.th.panel.callout.fancybox{"data-thumbnail"=>image_path_thumb,href:image_path_original,rel: "gallery", title: "#{link_to 'Delete', image, method: :delete, data:{confirm:'Delete?'}} | #{link_to 'Download', action: :download, id: image.id} #{i} / #{@images.count}"}
+      #frame   
+        %img{alt: "", src: image_path_thumb}/
+
+- else
+  %h1 Нет картинок 
