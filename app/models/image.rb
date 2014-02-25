@@ -6,9 +6,9 @@ has_attached_file :picture,
  :storage => :dropbox,
  :dropbox_credentials => Rails.root.join("config/dropbox_config.yml"),
   :dropbox_visibility => 'public',
- :styles => { :medium => "300x300>" , :thumb => "150x150>", :small=>"50>x50>"},    
+ :styles => {:thumb => "150x150>"},    
  :dropbox_options => {      
-   :path => proc { |style| URI.encode("#{style}/#{id}.jpg")},       :unique_filename => true   
+   :path => proc { |style| URI.encode("images/#{style}/#{id}.jpg")},       :unique_filename => true   
   }
  
 
