@@ -21,6 +21,7 @@
 
  }
  .small-1{
+ 	background-color: #7AC5CD
  }
  .large-10,.small-1{
     height: 100%;
@@ -30,10 +31,9 @@
 
    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
 
-background-image:url('brickwall_@2X.png');
+
  }
  .container{
-    background-color:#53868B;
     height: 100%;
  }
 
@@ -48,6 +48,7 @@ background-image:url('brickwall_@2X.png');
   border-radius: 10px;
 }
  
+ /*visibility*/
 .visible{
 	display: inline;
 	top: 20px;
@@ -58,6 +59,8 @@ background-image:url('brickwall_@2X.png');
 	display:none;
 }
 
+
+/*fancybox title apears on hover*/
 .fancybox-title-over-wrap {
     width: 100%;
     padding: 0;
@@ -67,6 +70,10 @@ background-image:url('brickwall_@2X.png');
     padding: 10px;
 }
 
+
+
+
+/*crop thumbnails*/
 #frame{
 width:140px;
 height:140px;
@@ -79,3 +86,20 @@ height:auto;
 min-width:140px;
 min-height:140px;
 }
+
+
+
+/* Body styles depend on time */
+
+ .bodystyle1{
+background-image:url('brickwall_@2X.png');
+ }
+  .bodystyle3{
+background-image:url('fresh_snow.png');
+ }
+ .bodystyle2{
+background-image:url('grey_wash_wall_@2X.png');
+ }
+ .bodystyle4{
+background-image:url('tweed_@2X.png');
+ }

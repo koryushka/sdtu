@@ -6,7 +6,7 @@
   = form_for @image, method: :post, :html => { :multipart => true }  do |f| 
     = f.file_field :picture, class: "radius_button button file_field",:onchange =>"validateFiles(this);document.getElementById('upload-preview').style.display='inline'",:data => {:max_file_size => 5.megabytes}
   
-    .div.centered
+    .centered
       = f.submit "Загрузить", :class => 'button radius success'
   .upload-preview#upload-preview{style:"display:none"}
     %img.centered{style: "max-width: 500px; height: 300px;"}/
