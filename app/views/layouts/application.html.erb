@@ -15,15 +15,18 @@
   </head>
 
 
-  <body style="background-color:#7AC5CD">
+  <body >
 
     <%= render 'layouts/header'%> 
-  <div style="height:100%" ,class="row">
-    <div class="small-1 columns"></div>
-    <div id ="container", class="large-10  columns ">
+
+  <div id ="container", style="min-height:100%",class="row">
+    <div class="large-2 columns">
+<ul class="side-nav"> <li><a href="#">Link 1</a></li> <li><a href="#">Link 2</a></li> <li><a href="#">Link 3</a></li> <li><a href="#">Link 4</a></li> </ul>
+    </div>
+    <div  class="large-8  columns ">
       <%= yield %>
     </div>   
-    <div class="large-1 columns"></div>
+    <div class="large-2 columns">____</div>
   </div>  
   
 

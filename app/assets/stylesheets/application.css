@@ -14,28 +14,16 @@
  *= require_tree .
  */
 
- .image_box,.container{
+ .image_box{
  	display: table;
     margin: 0 auto;
     width: 80%;
 
  }
- .small-1{
- 	background-color: #7AC5CD
- }
- .large-10,.small-1{
-    height: 100%;
-     
- }
- .large-10{
-
-   box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
 
 
- }
- .container{
-    height: 100%;
- }
+
+
 
 .centered{
 	display: table;
