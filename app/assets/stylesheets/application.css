@@ -19,6 +19,15 @@
     margin: 0 auto;
     width: 60%;
  }
+
+
+
+.grow:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+ 
 .visible{
 	display: inline;
 	top: 20px;
