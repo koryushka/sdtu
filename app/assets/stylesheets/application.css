@@ -13,13 +13,11 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
- body {
- 	background-color: #53868B;
- }
+
  .centered{
  	    display: table;
     margin: 0 auto;
-    width: 900px;
+    width: 60%;
  }
 .visible{
 	display: inline;
