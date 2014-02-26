@@ -14,12 +14,18 @@
     
   </head>
 
-  <body style = "background-color:#53868B">
+  <body>
 
     <%= render 'layouts/header'%> 
-    <div class = "centered">
-    <%= yield %>
-    </div>
+  <div style="width:100%;height:100%",class="row">
+    <div class="small-1 columns"></div>
+    <div class="large-10  columns">
+      <%= yield %>
+    </div>   
+    <div class="small-1 columns"></div>
+  </div>  
+  
+
 
     <%= javascript_include_tag "application" %>
 

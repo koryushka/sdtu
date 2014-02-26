@@ -14,18 +14,38 @@
  *= require_tree .
  */
 
- .centered{
- 	    display: table;
+ .image_box,.container{
+ 	display: table;
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
+
+ }
+ .small-1{
+ }
+ .large-10,.small-1{
+    height: 100%;
+     
+ }
+ .large-10{
+
+   box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+
+background-image:url('brickwall_@2X.png');
+ }
+ .container{
+    background-color:#53868B;
+    height: 100%;
  }
 
+.centered{
+	display: table;
+    margin: 0 auto;
+}
 
-
-.grow:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+.radius_button{
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
  
 .visible{
