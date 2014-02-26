@@ -8,7 +8,7 @@ has_attached_file :picture,
   :dropbox_visibility => 'public',
  :styles => {:thumb => "150x150>"},    
  :dropbox_options => {      
-   :path => proc { |style| URI.encode("images/local/#{style}/#{id}.jpg")},       :unique_filename => true   
+   :path => proc { |style| URI.encode("images/#{style}/#{id}.jpg")},       :unique_filename => true   
   }
  
 
