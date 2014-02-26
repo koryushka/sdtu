@@ -38,6 +38,7 @@ $(document).foundation();
           title:{
             type: 'over'
           },
+          buttons : {position : 'top'},
           overlay : {
             css : {
                 'background' : 'rgba(58, 42, 45, 0.95)'

@@ -28,7 +28,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails', "~> 3.1.0"
 #gem 'fancybox-rails'
-gem 'fancybox2-rails'
+gem 'fancybox2-rails', '~> 0.2.6'
 gem "magnific-popup-rails", "~> 0.9.4"
 #gem 'fancybox-rails', :github => 'greinacker/fancybox-rails', :branch => 'rails4'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
