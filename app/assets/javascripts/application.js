@@ -48,7 +48,8 @@ $(document).foundation();
                 'background' : 'rgba(58, 42, 45, 0.95)'
             }
           }
-        }
+        },
+
 
     });
    });
@@ -57,6 +58,11 @@ $(function(){
   $('remove_button').click(function(){
     $(this).addClass('invisible').removeClass('visible')
   })
+  $('.frame').each(function(){
+    var $img = $(this).find('img');
+    $(this).scrollTop(($img.height()-$(this).height())/2);
+    $(this).scrollLeft(($img.width()-$(this).width())/2);
+});
 })
 $(document).ready(function(){
     var preview = $(".upload-preview img");

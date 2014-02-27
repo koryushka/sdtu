@@ -14,7 +14,7 @@
       - image_path_thumb = URI.encode(image.picture.url(:thumb))
       - image_path_small = URI.encode(image.picture.url(:small))
       %a.th.panel.callout.grow-rotate.fancybox{style:"margin:15px;padding:10px;background-color:#7AC5CD;","data-thumbnail"=>image_path_thumb,href:image_path_original,rel: "gallery", title: "#{link_to 'Delete', image, method: :delete, data:{confirm:'Delete?'}} | #{link_to 'Download', action: :download, id: image.id} #{i} / #{@images.count}"}
-        .frame   
+        .frame
           %img{alt: "", src: image_path_thumb}/
 
 - else

@@ -29,10 +29,7 @@
     margin: 0 auto;
     width: 100%
 }
-.preview{
-		display: table;
-    margin: 0 auto;
-}
+
 
 .radius_button{
   -webkit-border-radius: 10px;
@@ -67,20 +64,22 @@
 
 /*crop thumbnails*/
 .frame{
-	float:left;
-	width:140px;
-	height:140px;
-	overflow: hidden;
+  overflow: hidden;
+  width:140px;
+  height:140px;
+
+
+
 
     
 }
 
-
 .frame img {
-	width:140px;
-	min-height: 140px;
-	min-width: 140px;
+	  width:140px;
+	  min-height: 140px;
+
 }
+
 
 
 
