@@ -17,11 +17,11 @@
  .image_box{
  	display: table;
     margin: 0 auto;
+    width:100%;
 
  }
 
 
-div.row{width:80%;}
 
 
 .centered{
