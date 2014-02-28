@@ -6,15 +6,13 @@
 }
 
 #fancybox-buttons.top {
-	top: 10px;
+	top: 2px;
 }
 
 #fancybox-buttons.bottom {
 	bottom: 10px;
 }
-#fancybox-thumbs.bottom{
-	margin-bottom: 10px;
-}
+
 
 #fancybox-buttons ul {
 	display: block;
