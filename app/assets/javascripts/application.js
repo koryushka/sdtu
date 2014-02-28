@@ -43,23 +43,26 @@ $(document).ready(function() {
             $(".fancybox-title").hide();
         });
     },
-        openEffect      : 'elastic',
-        helpers : {
-          title:{
-            type: 'over'
-          },
-          buttons : {},
-            thumbs : {
-   width : 50,
-   height : 50
-  },
-          overlay : {
-            css : {
-                'background' : 'rgba(58, 42, 45, 0.95)'
-            }
-          }
+      openEffect      : 'elastic',
+      helpers : {
+        title:{
+          type: 'over'
         },
-
+        buttons : {},
+        mouseWheel : true,
+        thumbs : {
+          width : 50,
+          height : 50
+        },
+        overlay : {
+          css : {
+            'background' : 'rgba(58, 42, 45, 0.95)'
+          }
+        }
+      },
+                  afterLoad : function() {
+                this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + ' ';
+            }
 
     });
    });
