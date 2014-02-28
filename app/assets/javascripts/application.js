@@ -305,6 +305,10 @@ $(document).foundation();
 
 }(jQuery));
 
+
+
+
+
     $(document).ready(function() {
       $(".fancybox").fancybox({
             afterShow: function() {
@@ -319,7 +323,7 @@ $(document).foundation();
       openEffect      : 'elastic',
       closeBtn : false,
       helpers : {
-        title:{ type : 'inside' },
+        title:{ type : 'over' },
         buttons : {},
         mouseWheel : true,
         thumbs : {
