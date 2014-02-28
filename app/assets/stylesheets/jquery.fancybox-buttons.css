@@ -12,6 +12,9 @@
 #fancybox-buttons.bottom {
 	bottom: 10px;
 }
+#fancybox-thumbs.bottom{
+	margin-bottom: 10px;
+}
 
 #fancybox-buttons ul {
 	display: block;
