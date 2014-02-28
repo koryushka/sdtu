@@ -311,6 +311,12 @@ $(document).foundation();
 
     $(document).ready(function() {
       $(".fancybox").fancybox({
+         beforeShow: function () {
+            /* Disable right click */
+            $.fancybox.wrap.bind("contextmenu", function (e) {
+                    return false; 
+            });
+        },
 
       openEffect      : 'elastic',
       closeBtn : false,
@@ -327,7 +333,7 @@ $(document).foundation();
         },
         overlay : {
           css : {
-            'background' : 'rgba(58, 42, 45, 0.95)'
+            'background' : 'rgba(0,  139 ,139, 0.95)'
           }
         }
       },
