@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require fancybox
+  *= require fancybox
  *= require foundation_and_overrides
  *= require_tree .
  */
