@@ -1,8 +1,9 @@
 #fancybox-buttons {
 	position: fixed;
 	left: 0;
-	width: 100%;
+	width: 20%;
 	z-index: 8050;
+	float:right;
 }
 
 #fancybox-buttons.top {
@@ -18,8 +19,9 @@
 	display: block;
 	width: 67px;
 	height: 32px;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	padding: 0;
+	float: left;
 	list-style: none;
 	border: 1px solid #111;
 	border-radius: 3px;
