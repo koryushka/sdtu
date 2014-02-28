@@ -322,9 +322,7 @@ $(document).foundation();
         thumbs : {
           width  : 75,
           height : 50,
-          source : function( item ) {
-            return item.href;
-          },
+
         },  
         
         overlay : {
