@@ -55,13 +55,14 @@ $(document).ready(function() {
           height : 50
         },
         overlay : {
+          showEarly  : false,
           css : {
             'background' : 'rgba(58, 42, 45, 0.95)'
           }
         }
       },
                   afterLoad : function() {
-                this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + ' ';
+                this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + ' ' + this.title ;
             }
 
     });
