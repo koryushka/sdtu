@@ -18,7 +18,6 @@
 //= require foundation
 //= require_tree .
 $(document).foundation();
-
  /*!
  * Buttons helper for fancyBox
  * version: 1.0.5 (Mon, 15 Oct 2012)
@@ -43,7 +42,7 @@ $(document).foundation();
     defaults : {
       skipSingle : false, // disables if gallery contains single image
       position   : 'top', // 'top' or 'bottom'
-      tpl        : '<div id="fancybox-buttons"><ul><li><a class="btnPrev" title="Previous" href="javascript:;"></a></li><li><a class="btnPlay" title="Start slideshow" href="javascript:;"></a></li><li><a class="btnNext" title="Next" href="javascript:;"></a></li><li><a class="btnToggle" title="Toggle size" href="javascript:;"></a></li><li><a class="btnClose" title="Close" href="javascript:;"></a></li></ul></div>'
+      tpl        : '<div id="fancybox-buttons"><ul><li><a class="btnPlay" title="Start slideshow" href="javascript:;"></a></li><li><a class="btnToggle" title="Toggle size" href="javascript:;"></a></li></ul></div>'
     },
 
     list : null,
@@ -141,6 +140,8 @@ $(document).foundation();
   };
 
 }(jQuery));
+
+
 
  /*!
  * Thumbnail helper for fancyBox
@@ -309,17 +310,11 @@ $(document).foundation();
 
 
 
-    $(document).ready(function() {
+    $(document).ready(function(){
       $(".fancybox").fancybox({
-         beforeShow: function () {
-            /* Disable right click */
-            $.fancybox.wrap.bind("contextmenu", function (e) {
-                    return false; 
-            });
-        },
 
       openEffect      : 'elastic',
-      closeBtn : false,
+      closeBtn : true,
       helpers : {
         title:{ type : 'inside' },
         buttons : {},
@@ -329,20 +324,26 @@ $(document).foundation();
           height : 50,
           source : function( item ) {
             return item.href;
-          }
-        },
+          },
+        },  
+        
         overlay : {
           css : {
             'background' : 'rgba(0,  139 ,139, 0.95)'
           }
         }
       },
-                  afterLoad : function() {
-                this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + ' ' + this.title ;
-            }
+ 
+            
+      afterLoad: function () {
+        this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + ' ' + this.title ;
+
+      },
 
     });
-   });
+     });
+
+  
 
 $(function(){
   $('remove_button').click(function(){

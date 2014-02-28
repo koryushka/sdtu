@@ -16,8 +16,8 @@
 
 #fancybox-buttons ul {
 	display: block;
-	width: 166px;
-	height: 30px;
+	width: 67px;
+	height: 32px;
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
@@ -40,7 +40,9 @@
 	float: left;
 	margin: 0;
 	padding: 0;
+	opacity: 0.8;
 }
+
 
 #fancybox-buttons a {
 	display: block;
