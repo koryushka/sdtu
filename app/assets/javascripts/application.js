@@ -55,7 +55,6 @@ $(document).ready(function() {
           height : 50
         },
         overlay : {
-          showEarly  : false,
           css : {
             'background' : 'rgba(58, 42, 45, 0.95)'
           }
