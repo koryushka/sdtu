@@ -50,7 +50,7 @@ class ImagesController < ApplicationController
 
   private
 def images_params
-  params.fetch(:image, {}).permit(:picture)
+  params.fetch(:image, {}).permit(:picture, :owner)
 end
 	
 end
