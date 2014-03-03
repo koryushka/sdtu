@@ -312,7 +312,7 @@ $(document).foundation();
 
     $(document).ready(function(){
       $(".fancybox").fancybox({
-
+        
       openEffect      : 'elastic',
       closeBtn : true,
       helpers : {

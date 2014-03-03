@@ -10,15 +10,17 @@
 .fancybox-nav span,
 .fancybox-tmp
 {
+
 	padding: 0;
 	margin: 0;
 	border: 0;
 	outline: none;
 	vertical-align: top;
-	
+
 }
 
 .fancybox-wrap {
+
 	position: absolute;
 	top: 0;
 	left: 0;
