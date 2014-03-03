@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140303035202) do
+ActiveRecord::Schema.define(version: 20140303110229) do
 
   create_table "images", force: true do |t|
     t.datetime "created_at"
@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 20140303035202) do
     t.string   "song_content_type"
     t.integer  "song_file_size"
     t.datetime "song_updated_at"
-    t.string   "album"
   end
 
 end
