@@ -416,19 +416,19 @@ function dynamicBG(){
 
 if (m<15 )
 {
-    $('#container').addClass('bodystyle1');
+    $('#container').addClass('bodystyle');
 }
 else if (m>=15 && m<30)
 {
-    $('#container').addClass('bodystyle2');
+    $('#container').addClass('bodystyle');
 }
 else if (m>=30 && m<45)
 {
-    $('#container').addClass('bodystyle3');
+    $('#container').addClass('bodystyle');
 }
 else if (m>=45 && m<=59)
 {
-    $('#container').addClass('bodystyle4');
+    $('#container').addClass('bodystyle');
 }
 }
 window.onload = dynamicBG;
