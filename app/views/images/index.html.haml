@@ -16,7 +16,7 @@
       %a.th.panel.callout.grow-rotate.fancybox{style:"margin:15px;padding:10px;background-color:#7AC5CD;","data-thumbnail"=>image_path_thumb,href:image_path_original,rel: "fancybox-thumb", title: "#{link_to 'Delete', image, method: :delete, data:{confirm:'Delete?'}} | #{link_to 'Download', action: :download, id: image.id}"}
         .frame
           %img{alt: "", src: image_path_thumb}/
-      %h3 Owner: #{image.owner}    
+ 
 
 - else
   %h1 Нет картинок 
@@ -24,10 +24,6 @@
   %p
     = form_for @image, method: :post, :html => { :multipart => true }  do |f| 
       = f.file_field :picture, class: "radius_button button file_field",:onchange =>"validateFiles(this);document.getElementById('upload-preview').style.display='inline'",:data => {:max_file_size => 5.megabytes}
-      = f.label :owner, "Liza"
-      = f.radio_button :owner, "Liza"
-      = f.label :owner, "Kirill"
-      = f.radio_button :owner,"Kirill"
       = f.submit "Загрузить",style:"width:100%;margin-top:30px",:class => 'button radius success centered'
   .upload-preview#upload-preview{style:"display:none"}
     %img.preview{style: "max-width: 500px; height: 300px;"}/
