@@ -23,17 +23,61 @@
        <% flash.each do |key, value|%>
      <div class="alert alert-<%= key %>"><%= value %></div>
     <% end %>
+      <div class="marketing off-canvas-wrap show-for-small-up hide-for-large-up"> 
+
+    <div class="inner-wrap"> 
+    <div class=" " >
+      <nav class="tab-bar"> 
+        <section class="left-small"> 
+          <a class="left-off-canvas-toggle menu-icon" >
+            <span></span>
+          </a> 
+        </section> 
+        <section class="middle tab-bar-section"> 
+          <h1 class="title">Images</h1> 
+        </section> 
+      </nav>
+
+    </div>
+      <aside class="left-off-canvas-menu"> 
+        <ul class="off-canvas-list"> 
+          <li><label>Home</label></li> 
+          <li>
+            <%= link_to "На главную", root_path%>
+          </li>
+          <li>
+            <%= link_to "Music", musics_path%>
+          </li>
+          
+        </ul> 
+      </aside> 
+     
+  <div class = 'row' >
+    <section class="main-section">
+    <div class = 'large-3 columns'>  
+      <ul class="side-nav"> <li><a href="#">Link 1</a></li> <li><a href="#">Link 2</a></li> <li><a href="#">Link 3</a></li> <li><a href="#">Link 4</a></li> </ul>
+    </div> 
+    <div class = 'large-9 columns'>  
+      <%= yield %>
+    </div> 
+    </section> 
+    <a class="exit-off-canvas"></a> 
+  </div>
+ 
+ 
+  </div>
+
+ </div>
     
-  <div style="width:80%;display: table;
-    margin: 0 auto;",class="row">
+  <div class="row hide-for-small">
     <div class="large-2 columns">
 <ul class="side-nav"> <li><a href="#">Link 1</a></li> <li><a href="#">Link 2</a></li> <li><a href="#">Link 3</a></li> <li><a href="#">Link 4</a></li> </ul>
     </div>
     <div  class="large-8  columns ">
       <%= yield %>
-    </div>   
-    <div class="large-2 columns">____</div>
-  </div>  
+    </div>
+  </div>
+
   
 
 

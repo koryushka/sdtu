@@ -10,13 +10,9 @@ class ImagesController < ApplicationController
   def create
   	  	@images = Image.order('created_at DESC')
   	@image = Image.new(images_params)
-      if @image.save && params[:image][:owner] == "Kirill"    
-         redirect_to images_path, notice: "Upload successfull. Owner Kirill"
-      elsif @image.save && params[:image][:owner] == "Liza"    
-         redirect_to images_path, notice: "Upload successfull. Owner Liza"
-      elsif @image.save  
-         redirect_to images_path, notice: "Upload successfull"        
-      else
+      if @image.save 
+         redirect_to images_path, notice: "Upload successfull"
+           else
         render "index"
         flash.now[:error] =  "Ошибка загрузки"
 
