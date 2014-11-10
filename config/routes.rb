@@ -1,8 +1,8 @@
 Ssdtu::Application.routes.draw do
-    root 'images#index'
+  root 'images#index'
   get 'images/download'
   get 'musics/download'
-  resources :images 
+  resources :images
   resources :musics
 
   # The priority is based upon order of creation: first created -> highest priority.

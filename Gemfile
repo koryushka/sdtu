@@ -14,6 +14,8 @@ gem "compass-recipes", "~> 0.3.0"
 
 gem 'less-rails'
 
+gem 'impressionist'
+
 #gem 'will_paginate-bootstrap'
 
 gem 'will_paginate'
@@ -25,7 +27,7 @@ gem 'coffee-rails', '~> 4.0.0'
 #gem "taps", "~> 0.3.24"
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
- gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails', "~> 3.1.0"
@@ -48,7 +50,7 @@ group :doc do
 end
 
 group :production do
-	
-	gem 'rails_12factor'
+
+  gem 'rails_12factor'
 end
 

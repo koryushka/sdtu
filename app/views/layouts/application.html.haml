@@ -1,0 +1,45 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0", :name => "viewport"}/
+    %title= content_for?(:title) ? yield(:title) : "foundation-rails"
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tags
+  %body#container
+
+    = render 'layouts/header'
+    .empty
+    - flash.each do |key, value|
+      %div{:class => "alert alert-#{key}"}= value
+    .off-canvas-wrap.show-for-small-up.hide-for-large-up
+      .inner-wrap
+        %div
+          %nav.tab-bar
+            %section.left-small
+              %a.left-off-canvas-toggle.menu-icon
+                %span
+            %section.middle.tab-bar-section
+              %h1.title Images
+        %aside.left-off-canvas-menu
+          %ul.off-canvas-list
+            %li
+              %label Home
+            %li
+              = link_to "На главную", root_path
+            %li
+              = link_to "Music", musics_path
+        .row
+          %section.main-section
+            .large-3.columns
+
+            .large-9.columns
+              = yield
+          %a.exit-off-canvas
+    .row.hide-for-small.hide-for-medium
+      .large-2.columns
+
+      .large-8.columns
+        = yield
+    = javascript_include_tag "application"

@@ -1,0 +1,49 @@
+#toggleButton
+  %button.tiny{style:"position:fixed; top:20px;left:20px;z-index:10"}
+    show menu
+#toggleButton2
+  %button.tiny{style:"position:fixed; top:60px;left:20px;z-index:10"}
+    hide menu    
+#menu
+  #hidden_menu
+    .row
+      .large-12.column
+        =link_to '&times;'.html_safe, "#", class: "toggle_menu", id:"toggle_menu2"
+        %hr
+
+        %ul.no-bullet.in-menu
+          %li 1
+          %hr
+          %li 2
+          %hr
+          %li 3
+          %hr
+          %li 4
+          %hr
+          %li 5 
+          %hr
+          %li 1
+          %hr
+          %li 1
+          %hr
+          %li 2
+          %hr
+          %li 3
+          %hr
+          %li 4
+          %hr
+          %li 5 
+          %hr
+          %li 1
+
+                                     
+  #border
+    .row
+      .large-12.column
+        =link_to '&#9782;'.html_safe, "#", class: "toggle_menu", id:"toggle_menu"
+        .logo
+          = link_to "logo", "#"
+        %hr  
+
+
+    

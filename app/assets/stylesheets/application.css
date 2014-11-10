@@ -16,39 +16,37 @@
  */
 
 
- .image_box{
- 	display: table;
+
+.image_box {
+    display: table;
     margin: 0 auto;
-    width:100%;
+    width: 100%;
 
- }
+}
 
-
-
-.centered{
-	display: table;
+.centered {
+    display: table;
     margin: 0 auto;
     width: 100%
 }
 
-
-.radius_button{
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-}
- 
- /*visibility*/
-.visible{
-	display: inline;
-	top: 20px;
-	left: 20px;
-	width: 200px;
-}
-.invisible{
-	display:none;
+.radius_button {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
+/*visibility*/
+.visible {
+    display: inline;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+}
+
+.invisible {
+    display: none;
+}
 
 /*fancybox title apears on hover*/
 .fancybox-title-over-wrap {
@@ -60,41 +58,60 @@
     padding: 10px;
 }
 
-
-
-
 /*crop thumbnails*/
-.frame{
-  overflow: hidden;
-  width:140px;
-  height:140px;
+.frame {
+    overflow: hidden;
+    width: 140px;
+    height: 140px;
 
-
-
-
-    
 }
 
 .frame img {
-	  width:140px;
-	  min-height: 140px;
+    width: 140px;
+    min-height: 140px;
 
 }
 
-
-
-
 /* Body styles depend on time */
 
- .bodystyle1{
-background-image:url('brickwall_@2X.png');
- }
-  .bodystyle3{
-background-image:url('fresh_snow.png');
- }
- .bodystyle2{
-background-image:url('grey_wash_wall_@2X.png');
- }
- .bodystyle4{
-background-image:url('tweed_@2X.png');
- }
+.bodystyle1 {
+    background-image: url('brickwall_@2X.png');
+}
+
+.bodystyle3 {
+    background-image: url('fresh_snow.png');
+}
+
+.bodystyle2 {
+    background-image: url('grey_wash_wall_@2X.png');
+}
+
+.bodystyle4 {
+    background-image: url('tweed_@2X.png');
+}
+
+
+/*menu*/
+.empty{height: 100px;}
+#menu{ width:100%; }
+
+
+
+a:visited, a:link, a:active {color: #000;}
+.menu a:hover   {color:grey;}
+.toggle_menu {font-size: 16pt;}
+.logo{display: inline; font-weight: bold; font-size: 18pt;float:right;}
+.in-menu li {height: 50px; padding-top:20px;margin: 0 auto;display: table;width:100%;}
+ul.inline-list{display: inline}
+.fixed-content {
+    width:100%;
+    top:0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+#hidden_menu{border-bottom:3px normal orange;position:fixed;z-index: 5;  font-style:bold; background-color:#fff;width:100%;  }
+.fixed{  position:fixed;z-index: 10}
+#border{border-top: 5px solid orange;font-style:bold; background-color:#fff;}

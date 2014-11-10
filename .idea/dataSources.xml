@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1678960265">
+    <data-source source="LOCAL" name="Rails ssdtu: development" uuid="c1baee85-22f3-4bd7-b929-a089ca3f344a">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:ssdtu_development</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails ssdtu: test" uuid="453cdf4b-fe0b-441e-8a39-e81e0d4ab11f">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:ssdtu_test</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails ssdtu: production" uuid="1a8dd70b-305f-4985-8624-43f7c1120cd8">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:ssdtu_development</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
