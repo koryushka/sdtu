@@ -10,7 +10,7 @@
   %body#container
 
     = render 'layouts/header'
-    .empty
+    
     - flash.each do |key, value|
       %div{:class => "alert alert-#{key}"}= value
     .off-canvas-wrap.show-for-small-up.hide-for-large-up
@@ -32,14 +32,16 @@
               = link_to "Music", musics_path
         .row
           %section.main-section
-            .large-3.columns
+            .large-1.columns
 
-            .large-9.columns
+            .large-10.columns
               = yield
+            .large-1.columns
           %a.exit-off-canvas
-    .row.hide-for-small.hide-for-medium
-      .large-2.columns
+    .row.show-for-small-up
+      .large-1.columns
 
-      .large-8.columns
+      .large-10.columns
         = yield
+      .large-1.columns
     = javascript_include_tag "application"

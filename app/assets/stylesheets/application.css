@@ -89,29 +89,23 @@
 .bodystyle4 {
     background-image: url('tweed_@2X.png');
 }
-
+.empty{padding-top: 100px;}
 
 /*menu*/
-.empty{height: 100px;}
-#menu{ width:100%; }
+#menu{ width:100%; position: fixed; top: -878px;z-index: 10; background-color: #fff }
 
+.fixed-content { bottom:-36px;  top:0;  overflow-y:scroll;  overflow-x:hidden; }
+
+#toggle_menu, #toggle_menu2{cursor:pointer; font-size:25pt;display: inline}
+#toggle_menu2{font-size:45pt; }
+#toggle_menu:hover, #toggle_menu2:hover{color:grey;}
+#border{border-top: 5px solid orange;font-style:bold;}
+.row#with_bottom_border{border-bottom: 1px solid #C7C7C7 }
+#hidden_menu{border-bottom:3px solid orange;  font-style:bold;}
 
 
 a:visited, a:link, a:active {color: #000;}
-.menu a:hover   {color:grey;}
-.toggle_menu {font-size: 16pt;}
+#menu a:hover,.logo a   {color:grey;}
 .logo{display: inline; font-weight: bold; font-size: 18pt;float:right;}
 .in-menu li {height: 50px; padding-top:20px;margin: 0 auto;display: table;width:100%;}
 ul.inline-list{display: inline}
-.fixed-content {
-    width:100%;
-    top:0;
-    bottom:0;
-    position:fixed;
-    overflow-y:scroll;
-    overflow-x:hidden;
-}
-
-#hidden_menu{border-bottom:3px normal orange;position:fixed;z-index: 5;  font-style:bold; background-color:#fff;width:100%;  }
-.fixed{  position:fixed;z-index: 10}
-#border{border-top: 5px solid orange;font-style:bold; background-color:#fff;}
